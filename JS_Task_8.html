@@ -1,5 +1,4 @@
-
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -184,26 +183,13 @@
                     </td>
                 </tr>
                 <tr>
-        <td><label for="gender">Gender:</label></td>
-        <td>
-          <input
-            style="width: fit-content"
-            type="radio"
-            name="gender"
-            id="male"
-            checked
-          />
-          Male
-          <br />
-          <input
-            style="width: fit-content"
-            type="radio"
-            name="gender"
-            id="male"
-          />
-          Female
-        </td>
-      </tr>
+                    <th rowspan="2">Gender:</th>
+                    <td><input id="male" name="gender" type="radio" />Male</td>
+                </tr>
+                <tr>
+                    <td><input id="female" name="gender" type="radio" />Female</td>
+                </tr>
+                <tr>
                     <th>Age:</th>
                     <td>
                         <div class="input-container"><input id="age" type="number" /><span class="error"

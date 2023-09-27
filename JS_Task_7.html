@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #i1 {
+            position: absolute;
+            top: 100px;
+        }
+        #blue{
+            color: #010689;
+            margin-top:300px;
+        }
+        form{
+            margin-left:200px;
+        }
+        body{
+            margin-left : 500px;
+        }
+    </style>
+    <script>
+        var interval; 
+
+        function start() {
+            interval = setInterval(moveRight, 100);
+        }
+
+        function stop() {
+            clearInterval(interval); 
+        }
+
+        function moveRight() {
+            var step = 3; 
+            var x = document.getElementById('i1').offsetLeft;
+            x += step;
+            document.getElementById('i1').style.left = x + "px";
+        }
+    </script>
+</head>
+<body>
+    <img src="./Train.jpeg" id='i1' alt="Train">
+    <h2 id="blue">Click the following buttons to handle animation</h2>
+    <form>
+        <input type="button" onClick="start()" value="Start">
+        <input type="button" onClick="stop()" value="Stop">
+    </form>
+</body>
+</html>
